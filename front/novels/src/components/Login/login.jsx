@@ -27,7 +27,7 @@ const Login = () => {
     console.log("Token do Google:", response.credential);
   
     alert("Login com Google realizado!");
-  };
+  }; 
 
   const handleSubmit = async (event) => {
     event.preventDefault();
