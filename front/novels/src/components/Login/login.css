@@ -101,16 +101,12 @@
 
 
 .google-login { 
-    overflow: hidden;
-    align-items: center;
-     cursor: pointer;
-    border: none;
+  overflow: hidden;
+  align-items: center;
+  cursor: pointer;
+  border: none;
   outline: none;
   border-radius: 40px;
-  
-
-
-  
 }
 
   
