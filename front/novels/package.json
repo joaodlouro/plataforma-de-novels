@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-dialog": "^1.1.14",
     "@react-icons/all-files": "^4.1.0",
     "@react-oauth/google": "^0.12.2",
     "install": "^0.13.0",
@@ -17,7 +18,9 @@
     "npm": "^11.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.1.0"
+    "react-icons": "^5.1.0",
+    "react-router": "^7.7.1",
+    "react-router-dom": "^7.7.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

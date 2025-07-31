@@ -2,17 +2,16 @@ import { useState, useEffect, useRef } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
 import "./login.css";
 
-const Login = () => {
+
+const LoginPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-
   const googleButton = useRef(null);
 
   useEffect(() => {
-
     if (window.google && googleButton.current) {
       google.accounts.id.initialize({
-        client_id: "",
+        client_id: "", 
         callback: handleGoogleResponse,
       });
 
@@ -25,16 +24,27 @@ const Login = () => {
 
   const handleGoogleResponse = (response) => {
     console.log("Token do Google:", response.credential);
-  
     alert("Login com Google realizado!");
-  }; 
+  };
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-  
+
+    if (!username || !password) {
+      alert("Preencha todos os campos.");
+      return;
+    }
+
+    if (username === "admin" && password === "1234") {
+      alert("Login bem-sucedido!");
+      
+    } else {
+      alert("Credenciais inválidas.");
+    }
   };
 
   return (
+     <div className="login-page">
     <div className="container">
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
@@ -75,12 +85,12 @@ const Login = () => {
 
         <div className="signup-link">
           <p>
-            Não tem uma conta? <a href="#">registrar</a>
+            Não tem uma conta? <a href="#">Registrar</a>
           </p>
         </div>
       </form>
     </div>
-  );
+    </div>  );
 };
 
-export default Login;
+export default LoginPage;

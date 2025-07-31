@@ -1,13 +1,16 @@
-import "./App.css";
-import Login from "./components/Login/login.jsx";
-
-
+import "./Global.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Login from "./pages/Login/login.jsx";
+import Perfil from "./pages/Perfil/perfil.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Login />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/perfil" element={<Perfil />} />
+      </Routes>
+    </Router>
   );
 }
 

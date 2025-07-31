@@ -1,3 +1,15 @@
+
+.login-page {
+  height: 100vh;          
+  display: flex;        
+  justify-content: center; 
+  align-items: center;    
+ background-image: url("public/assets/bg.webp");
+ background-size: cover;
+  background-position: center;
+    background-repeat: no-repeat; 
+}
+
 .container {
   width: 450px;
   background: rgba(255, 255, 255, 0.15);
@@ -5,6 +17,9 @@
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   padding: 40px;
+
+
+  
 }
 
 .container h1 {
@@ -110,4 +125,3 @@
 }
 
   
-
