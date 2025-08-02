@@ -78,7 +78,7 @@ const LoginPage = () => {
           <FaLock className="icon" />
         </div>
 
-        <div className="recall-forget">
+        <div className="recall-forget ">
           <label>
             <input type="checkbox" />
             Lembre de mim

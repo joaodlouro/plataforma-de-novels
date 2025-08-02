@@ -12,7 +12,7 @@
 
 .container {
   width: 450px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(215, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border: 2px solid rgba(255, 255, 255, 0.2);
   border-radius: 10px;
@@ -50,7 +50,7 @@
 }
 
 .input-field input::placeholder {
-  color: black;
+  color: white;
 }
 
 .input-field .icon {
@@ -67,22 +67,25 @@
   justify-content: space-between;
   font-size: 14.5px;
   margin: -15px 0 15px;
+  ;
   
 }
 
 .recall-forget label input {
-  accent-color: black;
-  margin-right: 4px;
+ 
+  margin-right: 7px;
+
 }
 
 .recall-forget a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
-.recall-forget a:hover {
-  text-decoration: underline;
+.recall-forget label {
+  color: white;
 }
+
 
 .container button {
   width: 100%;
@@ -100,10 +103,7 @@
    
 }
 
-.container button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transition: background 0.3s ease;
-}
+
 
 .container .signup-link {
   font-size: 14.5px;
@@ -112,13 +112,14 @@
 }
 
 .signup-link p a {
-  color:black;
+  color:white;
   text-decoration: none;
   font-weight: 400;
 }
 
 .signup-link p a:hover {
   text-decoration: underline;
+  color: white;
 }
 
 
@@ -126,9 +127,9 @@
   overflow: hidden;
   cursor: pointer;
   border-radius: 40px;
-  align-items: center; 
-  margin-top: 20px
-    
+ margin-top: 10px ;
+
+ 
 }
 
 .anonymous-login {
@@ -146,3 +147,6 @@
   
 }
 
+.signup-link{
+  color: white;
+}
