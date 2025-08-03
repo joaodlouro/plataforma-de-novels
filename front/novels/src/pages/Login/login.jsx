@@ -2,6 +2,9 @@ import { useState, useEffect, useRef } from "react";
 import { FaLock, FaUser } from "react-icons/fa";
 import "./login.css";
 import { useNavigate } from "react-router";
+import FloatingImg from "../../components/FloatingImgC/FloatingImg";
+
+
 
 
 const LoginPage = () => {
@@ -52,6 +55,8 @@ const LoginPage = () => {
 
   return (
      <div className="login-page">
+      <FloatingImg />
+      
     <div className="container">
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
