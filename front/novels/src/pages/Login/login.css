@@ -84,6 +84,11 @@
 
 .recall-forget label {
   color: white;
+ 
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
 }
 
 
